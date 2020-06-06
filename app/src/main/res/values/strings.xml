@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">reminder_me_1</string>
+    <string name="no_of_times">No of times:</string>
+    <string name="enter">ENTER</string>
+    <string name="try_the_sound">Try the sound:</string>
+    <string name="play">PLAY</string>
+    <string name="pause">PAUSE</string>
+    <string name="stop">STOP</string>
+    <string name="enable_the_reminder">Enable the reminder</string>
+    <string name="disable_the_reminder">Disable the reminder</string>
+    <string name="stop_it_now">Stop it now</string>
+</resources>

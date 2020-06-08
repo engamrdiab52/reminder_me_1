@@ -74,10 +74,11 @@ public class MainActivity extends AppCompatActivity {
 
         calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
-        calendar.set(Calendar.HOUR_OF_DAY, 12);
-        calendar.set(Calendar.MINUTE, 30);
+        calendar.set(Calendar.HOUR_OF_DAY, 0);
+        calendar.set(Calendar.MINUTE, 15);
         // this condition to prevent the alarm from fire as soon as it starts
-        /*if(calendar.getTimeInMillis()<System.currentTimeMillis()){
+
+/*        if(calendar.getTimeInMillis()<System.currentTimeMillis()){
             calendar.add(Calendar.DAY_OF_YEAR,1);
             Toast.makeText(this, "tomorrow", Toast.LENGTH_LONG).show();
         }*/
@@ -234,7 +235,7 @@ public void loadData(){
         play_enabled = sharedPreferences.getBoolean(PLAY,true);
         pause_enabled = sharedPreferences.getBoolean(PAUSE,true);
         stop_enabled = sharedPreferences.getBoolean(STOP,true);
-        stop_enabled= sharedPreferences.getBoolean(STOPNOW,true);
+        stopNow_enabled= sharedPreferences.getBoolean(STOPNOW,true);
         editText_enabled = sharedPreferences.getBoolean(EDIT_TEXT,true);
 }
 public void updateData(){

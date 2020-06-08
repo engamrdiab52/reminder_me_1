@@ -30,6 +30,7 @@ public class ExampleService extends Service {
                 public void onCompletion(MediaPlayer mp) {
                     if (count < no_of_times) {
                         mp.start();
+                        Log.i("SONG:::::",Integer.toString(count));
                         count++;
                     }else {
                         count = 0;

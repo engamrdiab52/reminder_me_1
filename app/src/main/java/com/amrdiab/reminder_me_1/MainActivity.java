@@ -154,11 +154,9 @@ public class MainActivity extends AppCompatActivity {
                     , 101, intent, PendingIntent.FLAG_NO_CREATE);
         if (pendingIntent !=null)   {
             alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-            //if (alarmManager == null) throw new AssertionError();//
-            if (alarmManager != null) {
-                alarmManager.cancel(pendingIntent);
+            alarmManager.cancel(pendingIntent);
                 Log.i("ALARM MANGER::::", "canceled");
-            }
+
             enter.setEnabled(true);
             enable.setEnabled(true);
             editText.setEnabled(true);
